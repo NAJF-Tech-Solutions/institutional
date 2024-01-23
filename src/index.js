@@ -4,10 +4,9 @@ import "./index.css"
 import Institutional from "./pages/Institutional"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
+
 root.render(
   <React.StrictMode>
-    <div>
-      <Institutional></Institutional>
-    </div>
+    <Institutional></Institutional>
   </React.StrictMode>
 )
