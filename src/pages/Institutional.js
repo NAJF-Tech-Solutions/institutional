@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 import "./Institutional.css"
-import { aboutText, whoIsText } from "../helpers/messages"
+import { whoIsText } from "../helpers/messages"
 import teamImage from "../assets/equipe-simac.jpg"
 
 import naka from "../assets/founders/Naka.jpg"
@@ -23,11 +23,10 @@ function Institutional() {
     <div>
       <div className="about">
         <Header></Header>
-        
       </div>
 
       <div className="whoIs">
-        <img src={teamImage} className="image"></img>
+        <img src={teamImage} className="image" alt="Imagem da Premiação"></img>
         <div className="textArea">
           <div className="text">
             <h1>Quem somos?</h1>

@@ -10,7 +10,7 @@ function Asset({ image, link, title }) {
   return (
     <div className={styles.container} onClick={handleClick}>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={image} alt="Asset Image" />
+        <img className={styles.image} src={image} alt="Imagem do Site" />
         <div className={styles.overlay}></div>
         <h1 className={styles.text}>{title}</h1>
       </div>
