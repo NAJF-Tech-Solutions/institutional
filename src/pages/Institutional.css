@@ -1,3 +1,4 @@
+/* Home */
 .about {
   height: 100vh;
   background-size: cover;
@@ -5,20 +6,7 @@
     url(../assets/background.jpg);
 }
 
-.aboutTextContainer {
-  background-color: rgba(12, 12, 12, 0.8);
-  width: 85vw;
-  height: 20rem;
-  padding: 3rem;
-  margin: 5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 4rem #000000;
-  text-align: justify;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Quem somos? */
 .whoIs {
   display: flex;
   padding: 2rem;
@@ -51,8 +39,13 @@
   justify-content: space-evenly;
 }
 
+/* Nosso Portfólio */
 .assets {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),url(../assets/background-assets.jpg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../assets/background-assets.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fdfcfa;
@@ -73,6 +66,23 @@
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+/* Rodapé de Contato */
+footer {
+  height: 15vh;
+}
+
+footer p {
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

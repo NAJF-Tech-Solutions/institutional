@@ -6,20 +6,24 @@ import teamImage from "../assets/equipe-simac.jpg"
 import naka from "../assets/founders/Naka.jpg"
 import fugita from "../assets/founders/Fugita.jpg"
 import joao from "../assets/founders/Joao.jpg"
+
 import nakadocinhos from "../assets/sites/nakadocinhos.png"
 import sextaholdem from "../assets/sites/sextaholdem.png"
 
+import whatsapp from "../assets/socialMedias/whatsapp.png"
+import linkedin from "../assets/socialMedias/linkedin.png"
+import gmail from "../assets/socialMedias/gmail.png"
+
 import Employer from "../components/Employer"
 import Asset from "../components/Asset"
+import SocialMedia from "../components/SocialMedia"
 
 function Institutional() {
   return (
     <div>
       <div className="about">
         <Header></Header>
-        <div className="aboutTextContainer">
-          <h1>{aboutText}</h1>
-        </div>
+        
       </div>
 
       <div className="whoIs">
@@ -66,6 +70,21 @@ function Institutional() {
           ></Asset>
         </div>
       </div>
+
+      <footer>
+        <p>Contato</p>
+        <div className="contact">
+          <SocialMedia
+            image={linkedin}
+            link={"https://www.linkedin.com/in/lucas-nakagawa/"}
+          ></SocialMedia>
+          <SocialMedia
+            image={whatsapp}
+            link={"https://wa.me/5511998877717"}
+          ></SocialMedia>
+          <SocialMedia image={gmail}></SocialMedia>
+        </div>
+      </footer>
     </div>
   )
 }

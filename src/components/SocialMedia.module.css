@@ -1,0 +1,22 @@
+.container {
+  background-color: transparent;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+  box-shadow: 0 0 1.5rem #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url(../assets//cursors/click.png), auto;
+}
+
+.container:hover {
+  background-color: #fcfbfc;
+  box-shadow: 0 0 2.5rem #000000;
+}
+
+.image {
+  height: 3.5rem;
+  width: 3.5rem;
+}
