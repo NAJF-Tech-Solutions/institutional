@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.image {
+  height: 7.5rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+    linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+  box-shadow: 0 0 4rem #000000;
+}
+
+.name {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}

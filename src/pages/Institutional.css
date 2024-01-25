@@ -1,0 +1,82 @@
+.about {
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.7)),
+    url(../assets/background.jpg);
+}
+
+.aboutTextContainer {
+  background-color: rgba(12, 12, 12, 0.8);
+  width: 85vw;
+  height: 20rem;
+  padding: 3rem;
+  margin: 5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 4rem #000000;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whoIs {
+  display: flex;
+  padding: 2rem;
+}
+
+.whoIs .image {
+  height: 20rem;
+  border-radius: 50%;
+  align-self: center;
+  box-shadow: 0 0 4rem #000000;
+}
+
+.whoIs .textArea {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.whoIs .textArea .text {
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.whoIs .textArea .text p {
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+.whoIs .founders {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.assets {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),url(../assets/background-assets.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fdfcfa;
+  color: #181a1e;
+}
+
+.assets h1 {
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.assets .cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-evenly;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .whoIs .image {
+    display: none;
+  }
+}

@@ -1,9 +1,10 @@
 .container {
-  height: 10vh;
-  width: 100vw;
+  height: 5rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo {
