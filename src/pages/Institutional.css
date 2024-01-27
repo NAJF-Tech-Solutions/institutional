@@ -10,6 +10,8 @@
 .whoIs {
   display: flex;
   padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .whoIs .image {
@@ -52,9 +54,20 @@
   color: #181a1e;
 }
 
+.assets .description {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fdfcfa;
+}
+
+.assets .description p {
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
 .assets h1 {
-  text-align: center;
+  text-align: left;
   padding: 2.5rem;
+  padding-bottom: 0;
   font-size: 2.5rem;
 }
 
@@ -70,23 +83,56 @@
 
 /* Rodapé de Contato */
 footer {
-  height: 15vh;
+  min-height: 30vh;
 }
 
 footer p {
   font-size: 1.75rem;
-  text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 footer .contact {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 1rem;
+  height: 100%;
+}
+
+footer .contact .cellphones,
+footer .contact .socialMedias {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+footer .contact .item {
+  display: flex;
+  align-items: center;
+}
+
+footer .contact .item p {
+  font-size: 1.25rem;
+}
+
+footer .copyright {
+  font-size: 1rem;
+  text-align: right;
+  padding-top: 4rem;
 }
 
 @media (max-width: 768px) {
   .whoIs .image {
     display: none;
+  }
+
+  footer .contact {
+    flex-direction: column;
+  }
+
+  footer .contact .socialMedias,
+  footer .contact .cellphones {
+    width: 100%;
   }
 }
