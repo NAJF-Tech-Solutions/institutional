@@ -77,7 +77,7 @@ function Institutional() {
             image={sextaholdem}
             title={"Sexta Hold'em"}
             description={
-              "Uma plataforma online para um Home Game de Poker, com avisos, rankings, estapas, fotos, permitindo a divulgação do local. O Administrador da plataforma pode gerenciar todos os dados, facilitando a gestão."
+              "Uma plataforma online para um Home Game de Poker, com avisos, rankings, etapas e fotos, permitindo a divulgação do local. O Administrador da plataforma pode gerenciar todos os dados, facilitando a gestão."
             }
             link={"https://www.sextaholdem.com.br"}
           ></Asset>
@@ -121,9 +121,9 @@ function Institutional() {
             <div className="item">
               <SocialMedia
                 image={linkedin}
-                link={"https://www.linkedin.com/in/lucas-nakagawa/"}
+                link={"https://www.linkedin.com/company/najf-tech-solutions"}
               ></SocialMedia>
-              <p>linkedin.com/in/lucas-nakagawa/</p>
+              <p>linkedin.com/company/najf-tech-solutions</p>
             </div>
             <div className="item">
               <SocialMedia image={gmail}></SocialMedia>
