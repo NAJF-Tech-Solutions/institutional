@@ -1,6 +1,10 @@
 import Header from "../components/Header"
 import "./Institutional.css"
-import { whoIsText } from "../helpers/messages"
+import {
+  whoIsText,
+  descriptionNakadocinhos,
+  descriptionSextaHoldem,
+} from "../helpers/messages"
 import teamImage from "../assets/equipe-simac.jpg"
 
 import naka from "../assets/founders/Naka.jpg"
@@ -21,11 +25,16 @@ import SocialMedia from "../components/SocialMedia"
 function Institutional() {
   return (
     <div>
-      <div className="about">
+      <div id="about" className="about">
         <Header></Header>
+        <div id="slogan" className="slogan">
+          <h1>Sistemas de Gestão</h1>
+          <h1>Criação de Sites</h1>
+          <h1>Soluções de TI</h1>
+        </div>
       </div>
 
-      <div className="whoIs">
+      <div id="whoIs" className="whoIs">
         <img src={teamImage} className="image" alt="Imagem da Premiação"></img>
         <div className="textArea">
           <div className="text">
@@ -52,14 +61,14 @@ function Institutional() {
         </div>
       </div>
 
-      <div className="assets">
+      <div id="assets" className="assets">
         <div className="description">
           <h1>
             <strong>Nosso Portfólio</strong>
           </h1>
           <p>
             Nós desenvolvemos sistemas de gestão, automação, plataformas, sites,
-            aplicativos e o que seu negócio precisar!
+            aplicativos e o que mais seu negócio precisar!
             <br />
             Confira nossos principais projetos abaixo.
           </p>
@@ -68,23 +77,19 @@ function Institutional() {
           <Asset
             image={nakadocinhos}
             title={"Nakadocinhos"}
-            description={
-              "Um cardápio digital para os deliciosos doces e bolos personalizados do Nakadocinhos, facilitando a divulgação da marca e o primeiro contato com o cliente."
-            }
+            description={descriptionNakadocinhos}
             link={"https://www.nakadocinhos.com.br"}
           ></Asset>
           <Asset
             image={sextaholdem}
             title={"Sexta Hold'em"}
-            description={
-              "Uma plataforma online para um Home Game de Poker, com avisos, rankings, etapas e fotos, permitindo a divulgação do local. O Administrador da plataforma pode gerenciar todos os dados, facilitando a gestão."
-            }
+            description={descriptionSextaHoldem}
             link={"https://www.sextaholdem.com.br"}
           ></Asset>
         </div>
       </div>
 
-      <footer>
+      <footer id="contact">
         <p>
           <strong>Entre em contato conosco!</strong>
         </p>
