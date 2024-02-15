@@ -1,18 +1,12 @@
+import { useState, useEffect } from "react"
+import { Loading } from '../components/Loading'
 import Header from "../components/Header"
-import "./Institutional.css"
-import {
-  whoIsText,
-  descriptionNakadocinhos,
-  descriptionSextaHoldem,
-} from "../helpers/messages"
+import { whoIsText } from "../helpers/messages"
 import teamImage from "../assets/equipe-simac.jpg"
 
 import naka from "../assets/founders/Naka.jpg"
 import fugita from "../assets/founders/Fugita.jpg"
 import joao from "../assets/founders/Joao.jpg"
-
-import nakadocinhos from "../assets/sites/nakadocinhos.png"
-import sextaholdem from "../assets/sites/sextaholdem.png"
 
 import whatsapp from "../assets/socialMedias/whatsapp.png"
 import linkedin from "../assets/socialMedias/linkedin.png"
@@ -22,7 +16,22 @@ import Employer from "../components/Employer"
 import Asset from "../components/Asset"
 import SocialMedia from "../components/SocialMedia"
 
+import { contactList } from '../helpers/socialMedia'
+import { assetsList } from "../helpers/assets"
+
+import "./Institutional.css"
+
 function Institutional() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+  })
+
+  if(loading) return <Loading />
+
   return (
     <div>
       <div id="home" className="about">
@@ -35,7 +44,7 @@ function Institutional() {
       </div>
 
       <div id="sobre" className="whoIs">
-        <img src={teamImage} className="image" alt="Imagem da Premiação"></img>
+        <img src={teamImage} className="image" alt="Imagem da Premiação" loading="lazy"></img>
         <div className="textArea">
           <div className="text">
             <h1>Quem somos?</h1>
@@ -74,18 +83,15 @@ function Institutional() {
           </p>
         </div>
         <div className="cards">
-          <Asset
-            image={nakadocinhos}
-            title={"Nakadocinhos"}
-            description={descriptionNakadocinhos}
-            link={"https://www.nakadocinhos.com.br"}
-          ></Asset>
-          <Asset
-            image={sextaholdem}
-            title={"Sexta Hold'em"}
-            description={descriptionSextaHoldem}
-            link={"https://www.sextaholdem.com.br"}
-          ></Asset>
+          {assetsList.map(({ image, title, description, link}) => (
+            <Asset
+              key={title}
+              image={image}
+              title={title}
+              description={description}
+              link={link}
+            ></Asset>
+          ))}
         </div>
       </div>
 
@@ -95,32 +101,16 @@ function Institutional() {
         </p>
         <div className="contact">
           <div className="cellphones">
-            <div className="item">
-              <SocialMedia
-                image={whatsapp}
-                link={"https://wa.me/5511998877717"}
-              ></SocialMedia>
-              <p>(11) 99887-7717</p>
-              <p>Lucas Nakagawa</p>
-            </div>
-
-            <div className="item">
-              <SocialMedia
-                image={whatsapp}
-                link={"https://wa.me/5511988742687"}
-              ></SocialMedia>
-              <p>(11) 98874-2687</p>
-              <p>Mateus Fugita</p>
-            </div>
-
-            <div className="item">
-              <SocialMedia
-                image={whatsapp}
-                link={"https://wa.me/5511967535340"}
-              ></SocialMedia>
-              <p>(11) 96753-5340</p>
-              <p>João Paulo</p>
-            </div>
+            {contactList.map(({ name, phoneNumber, whatsAppLink }) => (
+              <div className="item" key={phoneNumber}>
+                <SocialMedia
+                  image={whatsapp}
+                  link={whatsAppLink}
+                ></SocialMedia>
+                <p>{phoneNumber}</p>
+                <p>{name}</p>
+              </div>
+            ))}
           </div>
           <div className="socialMedias">
             <div className="item">
