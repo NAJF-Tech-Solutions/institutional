@@ -25,7 +25,7 @@ import SocialMedia from "../components/SocialMedia"
 function Institutional() {
   return (
     <div>
-      <div id="about" className="about">
+      <div id="home" className="about">
         <Header></Header>
         <div id="slogan" className="slogan">
           <h1>Sistemas de Gestão</h1>
@@ -34,7 +34,7 @@ function Institutional() {
         </div>
       </div>
 
-      <div id="whoIs" className="whoIs">
+      <div id="sobre" className="whoIs">
         <img src={teamImage} className="image" alt="Imagem da Premiação"></img>
         <div className="textArea">
           <div className="text">
@@ -61,7 +61,7 @@ function Institutional() {
         </div>
       </div>
 
-      <div id="assets" className="assets">
+      <div id="portfolio" className="assets">
         <div className="description">
           <h1>
             <strong>Nosso Portfólio</strong>
@@ -89,7 +89,7 @@ function Institutional() {
         </div>
       </div>
 
-      <footer id="contact">
+      <footer id="contato">
         <p>
           <strong>Entre em contato conosco!</strong>
         </p>
