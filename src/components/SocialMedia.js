@@ -9,7 +9,7 @@ function SocialMedia({ image, link }) {
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <img className={styles.image} src={image} alt="Imagem da Rede Social"></img>
+      <img className={styles.image} src={image} alt="Imagem da Rede Social" loading="lazy"></img>
     </div>
   )
 }

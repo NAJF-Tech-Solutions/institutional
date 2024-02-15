@@ -15,7 +15,7 @@ function Asset({ image, link, title, description }) {
       </div>
       <div className={styles.container} onClick={handleClick}>
         <div className={styles.imageContainer}>
-          <img className={styles.image} src={image} alt="Imagem do Site" />
+          <img className={styles.image} src={image} alt="Imagem do Site" loading="lazy" />
           <div className={styles.overlay}></div>
           <h1 className={styles.text}>{title}</h1>
         </div>

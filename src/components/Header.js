@@ -3,7 +3,7 @@ import logo from "../assets/logo-sem-fundo.png"
 
 function Header() {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <a href="#home" className={styles.navLink}>
         Home
       </a>
@@ -11,7 +11,7 @@ function Header() {
         Quem somos?
       </a>
 
-      <img className={styles.logo} src={logo} alt="Logo da NAJF" />
+      <img className={styles.logo} src={logo} alt="Logo da NAJF" loading="lazy" />
 
       <a href="#portfolio" className={styles.navLink}>
         Nossos Serviços
@@ -19,7 +19,7 @@ function Header() {
       <a href="#contato" className={styles.navLink}>
         Contato
       </a>
-    </div>
+    </nav>
   )
 }
 
