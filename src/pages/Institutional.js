@@ -1,23 +1,15 @@
 import { useState, useEffect } from "react"
-import { Loading } from '../components/Loading'
-import Header from "../components/Header"
-import { whoIsText } from "../helpers/messages"
+import { Asset, Employer, Header, Loading, SocialMedia } from '../components'
+
 import teamImage from "../assets/equipe-simac.jpg"
-
-import naka from "../assets/founders/Naka.jpg"
-import fugita from "../assets/founders/Fugita.jpg"
-import joao from "../assets/founders/Joao.jpg"
-
 import whatsapp from "../assets/socialMedias/whatsapp.png"
 import linkedin from "../assets/socialMedias/linkedin.png"
 import gmail from "../assets/socialMedias/gmail.png"
 
-import Employer from "../components/Employer"
-import Asset from "../components/Asset"
-import SocialMedia from "../components/SocialMedia"
-
+import { whoIsText } from "../helpers/messages"
 import { contactList } from '../helpers/socialMedia'
 import { assetsList } from "../helpers/assets"
+import { founders } from "../helpers/founders"
 
 import "./Institutional.css"
 
@@ -30,10 +22,9 @@ function Institutional() {
     }, 2000);
   })
 
-  if(loading) return <Loading />
-
   return (
     <div>
+      {loading && <Loading />}
       <div id="home" className="about">
         <Header></Header>
         <div id="slogan" className="slogan">
@@ -51,21 +42,13 @@ function Institutional() {
             <p>{whoIsText}</p>
           </div>
           <div className="founders">
-            <Employer
-              image={fugita}
-              name={"Mateus Fugita"}
-              office={"CTO"}
-            ></Employer>
-            <Employer
-              image={naka}
-              name={"Lucas Nakagawa"}
-              office={"CEO"}
-            ></Employer>
-            <Employer
-              image={joao}
-              name={"João Paulo"}
-              office={"CIO"}
-            ></Employer>
+            {founders.map(({ name, role, image }) => (
+              <Employer
+                image={image}
+                name={name}
+                office={role}
+              ></Employer>
+            ))}
           </div>
         </div>
       </div>

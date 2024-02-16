@@ -1,6 +1,6 @@
 import styles from "./Asset.module.css"
 
-function Asset({ image, link, title, description }) {
+export function Asset({ image, link, title, description }) {
   const handleClick = () => {
     if (link) {
       window.open(link, "_blank")
@@ -23,5 +23,3 @@ function Asset({ image, link, title, description }) {
     </div>
   )
 }
-
-export default Asset

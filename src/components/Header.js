@@ -1,7 +1,7 @@
 import styles from "./Header.module.css"
 import logo from "../assets/logo-sem-fundo.png"
 
-function Header() {
+export function Header() {
   return (
     <nav className={styles.container}>
       <a href="#home" className={styles.navLink}>
@@ -22,5 +22,3 @@ function Header() {
     </nav>
   )
 }
-
-export default Header

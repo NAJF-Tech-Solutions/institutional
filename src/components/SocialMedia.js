@@ -1,6 +1,6 @@
 import styles from "./SocialMedia.module.css"
 
-function SocialMedia({ image, link }) {
+export function SocialMedia({ image, link }) {
   const handleClick = () => {
     if (link) {
       window.open(link, "_blank")
@@ -13,5 +13,3 @@ function SocialMedia({ image, link }) {
     </div>
   )
 }
-
-export default SocialMedia

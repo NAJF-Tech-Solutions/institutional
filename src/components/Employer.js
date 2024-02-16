@@ -1,6 +1,6 @@
 import styles from "./Employer.module.css"
 
-function Employer({ image, name, office }) {
+export function Employer({ image, name, office }) {
   return (
     <div className={styles.container}>
       <img className={styles.image} src={image} alt="Foto do Founder" loading="lazy"></img>
@@ -9,5 +9,3 @@ function Employer({ image, name, office }) {
     </div>
   )
 }
-
-export default Employer
