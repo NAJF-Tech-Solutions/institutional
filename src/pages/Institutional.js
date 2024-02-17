@@ -79,9 +79,9 @@ function Institutional() {
       </div>
 
       <footer id="contato">
-        <p>
-          <strong>Entre em contato conosco!</strong>
-        </p>
+        <div>
+          <h2>Entre em contato conosco!</h2>
+        </div>
         <div className="contact">
           <div className="cellphones">
             {contactList.map(({ name, phoneNumber, whatsAppLink }) => (
@@ -107,10 +107,12 @@ function Institutional() {
               <SocialMedia image={gmail}></SocialMedia>
               <p>najf@gmail.com</p>
             </div>
-            <h3 className="copyright">
-              © DESENVOLVIDO POR NAJF TECH SOLUTIONS
-            </h3>
           </div>
+        </div>
+        <div className="copyright">
+          <strong className="copyright">
+            © DESENVOLVIDO POR NAJF TECH SOLUTIONS
+          </strong>
         </div>
       </footer>
     </div>

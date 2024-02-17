@@ -7,10 +7,11 @@
 }
 
 .slogan {
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-top: 10vh;
 }
 
 .slogan h1 {
@@ -38,9 +39,7 @@
 /* Quem somos? */
 .whoIs {
   display: flex;
-  padding: 2rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 2rem;
 }
 
 .whoIs .image {
@@ -51,8 +50,7 @@
 }
 
 .whoIs .textArea {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
 }
 
 .whoIs .textArea .text {
@@ -86,17 +84,17 @@
 .assets .description {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fdfcfa;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .assets .description p {
   font-size: 1.25rem;
-  padding: 2rem;
 }
 
 .assets h1 {
-  text-align: left;
-  padding: 2.5rem;
-  padding-bottom: 0;
   font-size: 2.5rem;
 }
 
@@ -104,26 +102,26 @@
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  justify-content: space-evenly;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
 /* Rodapé de Contato */
 footer {
-  min-height: 30vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-footer p {
+footer h2 {
   font-size: 1.75rem;
-  padding: 1.5rem;
 }
 
 footer .contact {
   display: flex;
-  justify-content: space-evenly;
-  height: 100%;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 footer .contact .cellphones,
@@ -132,13 +130,13 @@ footer .contact .socialMedias {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2rem;
+  gap: 1.5rem;
 }
 
 footer .contact .item {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 
 footer .contact .item p {
@@ -146,9 +144,7 @@ footer .contact .item p {
 }
 
 footer .copyright {
-  font-size: 1rem;
   text-align: right;
-  padding-top: 4rem;
 }
 
 @media (max-width: 768px) {
