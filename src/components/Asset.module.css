@@ -85,6 +85,7 @@
   text-align: center; /* Alinhamento do texto */
   z-index: 1; /* Certifica-se de que o texto está acima do overlay */
   display: none;
+  text-wrap: nowrap;
 }
 
 @media (max-width: 2240px) {

@@ -32,13 +32,22 @@ function Institutional() {
           <h1>Criação de Sites</h1>
           <h1>Soluções de TI</h1>
         </div>
+        <div className="seeMore">
+          <p>
+            Nós acreditamos que qualidade e transparência são a base para um negócio
+            saudável.
+          </p>
+          <a href="#whoIs">
+            <strong> Conhecer a NAJF</strong>
+          </a>
+        </div>
       </div>
 
       <div id="sobre" className="whoIs">
         <img src={teamImage} className="image" alt="Imagem da Premiação" loading="lazy"></img>
         <div className="textArea">
           <div className="text">
-            <h1>Quem somos?</h1>
+            <h1>Quem Somos?</h1>
             <p>{whoIsText}</p>
           </div>
           <div className="founders">
