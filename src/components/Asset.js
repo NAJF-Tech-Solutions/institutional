@@ -1,6 +1,6 @@
 import styles from "./Asset.module.css"
 
-function Asset({ image, link, title, description }) {
+export function Asset({ image, link, title, description }) {
   const handleClick = () => {
     if (link) {
       window.open(link, "_blank")
@@ -15,7 +15,7 @@ function Asset({ image, link, title, description }) {
       </div>
       <div className={styles.container} onClick={handleClick}>
         <div className={styles.imageContainer}>
-          <img className={styles.image} src={image} alt="Imagem do Site" />
+          <img className={styles.image} src={image} alt="Imagem do Site" loading="lazy" />
           <div className={styles.overlay}></div>
           <h1 className={styles.text}>{title}</h1>
         </div>
@@ -23,5 +23,3 @@ function Asset({ image, link, title, description }) {
     </div>
   )
 }
-
-export default Asset

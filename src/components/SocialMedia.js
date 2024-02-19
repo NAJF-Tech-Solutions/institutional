@@ -1,6 +1,6 @@
 import styles from "./SocialMedia.module.css"
 
-function SocialMedia({ image, link }) {
+export function SocialMedia({ image, link }) {
   const handleClick = () => {
     if (link) {
       window.open(link, "_blank")
@@ -9,9 +9,7 @@ function SocialMedia({ image, link }) {
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <img className={styles.image} src={image} alt="Imagem da Rede Social"></img>
+      <img className={styles.image} src={image} alt="Imagem da Rede Social" loading="lazy"></img>
     </div>
   )
 }
-
-export default SocialMedia
