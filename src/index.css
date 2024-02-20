@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 10vh;
 }
 
 :root {
