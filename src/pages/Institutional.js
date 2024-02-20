@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Asset, Employer, Header, Loading, SocialMedia } from '../components'
+import { Asset, Employer, Header, Loading, SocialMedia } from "../components"
 
 import teamImage from "../assets/equipe-simac.jpg"
 import whatsapp from "../assets/socialMedias/whatsapp.png"
@@ -7,7 +7,7 @@ import linkedin from "../assets/socialMedias/linkedin.png"
 import gmail from "../assets/socialMedias/gmail.png"
 
 import { whoIsText } from "../helpers/messages"
-import { contactList } from '../helpers/socialMedia'
+import { contactList } from "../helpers/socialMedia"
 import { assetsList } from "../helpers/assets"
 import { founders } from "../helpers/founders"
 
@@ -19,7 +19,7 @@ function Institutional() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 2000);
+    }, 2000)
   })
 
   return (
@@ -34,17 +34,22 @@ function Institutional() {
         </div>
         <div className="seeMore">
           <p>
-            Nós acreditamos que qualidade e transparência são a base para um negócio
-            saudável.
+            Nós acreditamos que qualidade e transparência são a base para um
+            negócio saudável.
           </p>
-          <a href="#whoIs">
+          <a href="#sobre">
             <strong> Conhecer a NAJF</strong>
           </a>
         </div>
       </div>
 
       <div id="sobre" className="whoIs">
-        <img src={teamImage} className="image" alt="Imagem da Premiação" loading="lazy"></img>
+        <img
+          src={teamImage}
+          className="image"
+          alt="Imagem da Premiação"
+          loading="lazy"
+        ></img>
         <div className="textArea">
           <div className="text">
             <h1>Quem Somos?</h1>
@@ -52,11 +57,7 @@ function Institutional() {
           </div>
           <div className="founders">
             {founders.map(({ name, role, image }) => (
-              <Employer
-                image={image}
-                name={name}
-                office={role}
-              ></Employer>
+              <Employer image={image} name={name} office={role}></Employer>
             ))}
           </div>
         </div>
@@ -75,7 +76,7 @@ function Institutional() {
           </p>
         </div>
         <div className="cards">
-          {assetsList.map(({ image, title, description, link}) => (
+          {assetsList.map(({ image, title, description, link }) => (
             <Asset
               key={title}
               image={image}
@@ -95,10 +96,7 @@ function Institutional() {
           <div className="cellphones">
             {contactList.map(({ name, phoneNumber, whatsAppLink }) => (
               <div className="item" key={phoneNumber}>
-                <SocialMedia
-                  image={whatsapp}
-                  link={whatsAppLink}
-                ></SocialMedia>
+                <SocialMedia image={whatsapp} link={whatsAppLink}></SocialMedia>
                 <p>{phoneNumber}</p>
                 <p>{name}</p>
               </div>
