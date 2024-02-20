@@ -74,12 +74,8 @@
 /* Quem somos? */
 .whoIs {
   display: flex;
-  /* removeu esses: */
-  padding: 2rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-
-  /* padding: 5rem 2rem; */
+  scroll-margin-top: 10vh;
+  padding: 5rem 2rem;
 }
 
 .whoIs .image {
@@ -119,6 +115,7 @@
   background-repeat: no-repeat;
   background-color: #fdfcfa;
   color: #181a1e;
+  scroll-margin-top: 10vh;
 }
 
 .assets .description {
